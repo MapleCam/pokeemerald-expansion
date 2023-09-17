@@ -103,7 +103,11 @@ static void HandleInputChooseTarget(void);
 static void HandleInputChooseMove(void);
 static void MoveSelectionDisplayPpNumber(void);
 static void MoveSelectionDisplayPpString(void);
+
+static void MoveSelectionDisplaySplitIcon(void);
+static void MulModifier(u16 *modifier, u16 val)
 static void MoveSelectionDisplayMoveTypeDoubles(u8 targetId);
+
 static void MoveSelectionDisplayMoveType(void);
 static void MoveSelectionDisplayMoveNames(void);
 static void HandleMoveSwitching(void);
@@ -126,7 +130,6 @@ static void EndDrawPartyStatusSummary(void);
 
 static void ReloadMoveNames(void);
 
-static void MoveSelectionDisplaySplitIcon(void);
 
 static void (*const sPlayerBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
 {
